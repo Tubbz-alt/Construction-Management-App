@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Subcontractor Tracker</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS AIzaSyDbElyUzqRxrJl0qEnkxfxDgELe48remfI-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link href="css/rangeslider.css" rel="stylesheet">
+
+    <link href="css/subcontractor.css" rel="stylesheet">
+
+    
+
+   
+    <style>
+
+    .profile{
+        
+    }
+
+    .prePlan{
+        background-color: #33b5e5;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    .form-check{
+        margin:10px auto;
+        text-align:center;
+    }
+
+    #spacer{
+        margin:0px;
+    }
+
+    
+
+    
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 700px; 
+            } 
+        }
+    </style>
+
+
+</head>
+
+<div class="container">
+
+        <div class="jumbotron">
+            <h1 class="h1-responsive">Project Management Subcontractor Tool</h1>
+            <p class="lead">Subcontactor Tracker</p>
+            <hr class="my-2">
+               
+        </div>
+
+        <h1> Progress Bar</h1>
+
+          <div class="progress" style="height: 50px">
+             <div class="progress-bar" id="mainProgress"  role="progressbar" style="width: 0%; height: 50px" value="25" min="0" max="100"></div>
+        </div>
+
+</div>
+
+
+
+ <div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          <h1>Pre Plan Meeting</h1>
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/agent.jpg" alt="Card image cap" id="agentPhoto">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Initial Meeting Coordinator</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Name: <span id="agentName"> Kim Agent</span></p>
+                    <p class="card-text">Phone: <span id='agentPhone'>55555555</span></p>
+                    <p class="card-text">Email: <span id='agentEmail'> kimAgent@gmail.com</span></p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+              
+
+            <div class="col-8">
+
+                <div class="row selectIt">
+
+                    <div class="col">
+
+                        <form class="selectionItem">
+
+                            <h3 class="text-center"> Select a New Home Agent</h3>
+
+                            <div class="organizer">
+                                <input class=class="form-check-input" type="radio" name="prePlanRadio" id="agent1" checked>
+                                <label class="form-check-label" for="agent1" id="labelAgent1">Agent Kim</label>
+                            </div>
+
+                            <div class="organizer">
+                                <input class=class="form-check-input" type="radio" name="prePlanRadio" id="agent2">
+                                <label class="form-check-label" for="agent2" id="labelAgent2">Agent Bob</label>
+                            </div>
+
+                            <div class="organizer">
+
+                                <input class=class="form-check-input"   type="radio" name="prePlanRadio" id="agent3">
+                                <label class="form-check-label" for="agent3" id="labelAgent3">Agent Ted</label>
+                            </div>
+
+
+                      </form>
+
+                     
+
+                    </div>
+
+                    <div class="col">
+
+                           <h1 class="text-center"> Star Rating</h1>
+                        <div class="starHolder">
+
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star-half-full blue-text fa-4x"> </i>
+                        </div>
+
+                       
+                  </div>
+
+                </div>
+
+
+
+                <h1 class="text-center">Pre Plan Checklist</h1>
+                  <label class="container2">Initial Meeting<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Dream Home List<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Area Identification<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Budget <span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Pre-qualification<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+              
+
+
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Lot Selection
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/mary.jpg" alt="Card image cap" id="landagentPhoto">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Land Specialist</a></h4>
+                    <!-- Text -->
+                   <p class="card-text">Name: <span id="landagentName"> MaryAgent</span></p>
+                    <p class="card-text">Phone: <span id='landagentPhone'>55555555</span></p>
+                    <p class="card-text">Email: <span id='landagentEmail'> maryAgent@gmail.com</span></p>
+
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+
+               <div class="row selectIt">
+
+                    <div class="col">
+
+                        <form class="selectionItem">
+
+                            <h3 class="text-center"> Select a Land Specilist</h3>
+
+                            <div class="organizer">
+                                <input class=class="form-check-input" type="radio" name="prePlanRadio" id="agent4" checked>
+                                <label class="form-check-label" for="agent4" id="labelAgent4">Agent Mary</label>
+                            </div>
+
+                            <div class="organizer">
+                                <input class=class="form-check-input" type="radio" name="prePlanRadio" id="agent5">
+                                <label class="form-check-label" for="agent5" id="labelAgent5">Agent Larry</label>
+                            </div>
+
+                            <div class="organizer">
+
+                                <input class=class="form-check-input"   type="radio" name="prePlanRadio" id="agent6">
+                                <label class="form-check-label" for="agent6" id="labelAgent6">Agent Sally</label>
+                            </div>
+
+
+                      </form>
+
+                     
+
+                    </div>
+
+                    <div class="col">
+
+                           <h1 class="text-center"> Star Rating</h1>
+                        <div class="starHolder1">
+
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star-half-full blue-text fa-4x"> </i>
+                        </div>
+
+                       
+                  </div>
+
+                </div>
+
+
+                <h1>Land Search</h1>
+                  <label class="container2">Initial Meeting<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Dream Lot List<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Area Identification<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Showing<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final List<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                 
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Financing Pre Qualification
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/james.jpg" alt="Card image cap" id="loanagentPhoto">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Loan Officer</a></h4>
+                    <!-- Text -->
+                     <p class="card-text"> Company Name: <span id="loancompanyName"> New Freedom Morgage</span></p>
+                    <p class="card-text">Name: <span id="loanagentName"> Loan Officer James</span></p>
+                    <p class="card-text">Phone: <span id='loanagentPhone'>55555555</span></p>
+                    <p class="card-text">Email: <span id='loanagentEmail'> loanjames@gmail.com</span></p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+
+               <div class="row selectIt">
+
+                    <div class="col">
+
+                        <form class="selectionItem">
+
+                            <h3 class="text-center"> Select a New Home Agent</h3>
+
+                            <div class="organizer">
+                                <input class=class="form-check-input" type="radio" name="prePlanRadio" id="agent7" checked>
+                                <label class="form-check-label" for="agent7" id="labelAgent7">Loan Officer James </label>
+                            </div>
+
+                            <div class="organizer">
+                                <input class=class="form-check-input" type="radio" name="prePlanRadio" id="agent8">
+                                <label class="form-check-label" for="agent8" id="labelAgent8">Loan Office Susan</label>
+                            </div>
+
+                            <div class="organizer">
+
+                                <input class=class="form-check-input"   type="radio" name="prePlanRadio" id="agent9">
+                                <label class="form-check-label" for="agent9" id="labelAgent9">Loan Officer Kate</label>
+                            </div>
+
+
+                      </form>
+
+                     
+
+                    </div>
+
+                    <div class="col">
+
+                           <h1 class="text-center"> Star Rating</h1>
+                        <div class="starHolder2">
+
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star blue-text fa-4x"> </i>
+                            <i class="fa fa-star-half-full blue-text fa-4x"> </i>
+                        </div>
+
+                       
+                  </div>
+
+                </div>
+                <h1>Financing</h1>
+
+
+                  <label class="container2">Initial Meeting<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Interview<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Pre Qualification<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Application<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                   <label class="container2">Underwriter Approval<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          House Plan Design
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/curbAppeal.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Architect</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: architect@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Home Plan Design</h1>
+                  <label class="container2">Must Have List<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Initial Design<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">3D Model<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final Design<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Lot Prep & Permit
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/constructionPrep.jpg" alt="Card image cap">
+
+                  <!--Copyright: <a href='https://www.123rf.com/profile_a4ndi'>a4ndi / 123RF Stock Photo</a> -->
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Contractor</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: contractor@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Build Prep</h1>
+                  <label class="container2">Submit for Paperwork<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Lay out house on lot<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Prepare Lot<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Permit<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Excavation
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/excavation.jpg" alt="Card image cap">
+
+                  <!--Copyright: <a href='https://www.123rf.com/profile_kadmy'>kadmy / 123RF Stock Photo</a> -->
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Excavation</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: excavator@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Excavation</h1>
+                  <label class="container2">Prepare lot<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Excavate<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Backfill<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Compact Soil<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                         Footings & Foundations
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/foundation.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Footings and Foundation</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: concrete@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Footings & Foundation</h1>
+                  <label class="container2">Prepare lot<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Excavate<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Backfill<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Compact Soil<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Framing
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/construction.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Framing</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: framing@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Framing</h1>
+                  <label class="container2">Review Plans<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Frame<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Sign Off<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Plumbing
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/bathroom.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Plumbing</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: plumber@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Plumbing</h1>
+                  <label class="container2">Connect Water & Sewer<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Rough Plumbing<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Finish Plubming<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Fixtures<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Electrical
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/lighting.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Electrical</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: excavator@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Electrical</h1>
+                  <label class="container2">Rough Electrical<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Connect to Power<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Finish Electrical<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Sign Off<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Dry Wall
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/basement.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Dry Wall</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email: drywall@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Dry Wall</h1>
+                  <label class="container2">Hang Dry Wall<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Mud <span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Tape<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final Inspection<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Painting
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/master.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Painting</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  painting@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Painting</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Primer<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Base & Case<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                   <label class="container2">Touch Up<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Flooring
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/flooring.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Flooring</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  flooring@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Flooring</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Cabinets
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/kitchen.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Cabinets</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  kitchen@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Cabinets</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Countertops
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/countertops.jpg" alt="Card image cap">
+
+                  <!-- Copyright: <a href='https://www.123rf.com/profile_studiodin'>studiodin / 123RF Stock Photo</a> -->
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Countertops</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  countertops@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Countertops</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Appliances
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Copyright: <a href='https://www.123rf.com/profile_sharky'>sharky / 123RF Stock Photo</a> -->
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/kitchen2.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Appliance</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  appliances@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Appliances</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Roofing
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/houseRoof.jpg" alt="Card image cap">
+
+                  <!-- Copyright: <a href='https://www.123rf.com/profile_iriana88w'>iriana88w / 123RF Stock Photo</a> -->
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Roofing</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  roofing@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Roofing</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Exterior
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/2story.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Exterior</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  exterior@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Exterior</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Landscaping
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/landscaping.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Landscaping</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  landscaping@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Landscaping</h1>
+                  <label class="container2">Prep<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Obtain Materials<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Install<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+<div class="container" >
+
+
+
+                  <div class="card prePlan" >
+                      <div class="card-body">
+                          Final Inspection & Move In
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+
+                  <!-- Card Dark -->
+
+    <div class="row">
+                <div class="col-4">
+                  <!-- Card -->
+                <div class="card profile">
+
+                  <!-- Card image -->
+                  <img class="card-img-top" src="thumbnail/agent.jpg" alt="Card image cap">
+
+                  <!-- Card content -->
+                  <div class="card-body ">
+
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Final Inspection</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Phone: 55555555</p>
+                    <p class="card-text">Email:  finalInspection@gmail.com</p>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+
+                  </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+                           
+
+
+
+
+                 
+              
+
+            <div class="col-8">
+                <h1>Final Inspection</h1>
+                  <label class="container2">City Inspection<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Client Walk Through<span class="dateComplete"></span><span class="complete">Complete</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Punch List<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container2">Final Sign Off<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                   <label class="container2">Settlement<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                   <label class="container2">Move in<span class="dateComplete"></span><span class="complete">Complete</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+
+
+                  
+
+                  
+
+                  <h1> Star Rating</h1>
+
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+
+
+            </div>
+
+
+        </div>
+
+           
+</div>
+
+
+
+ <div class="container" id="faq">
+
+      <div class="card prePlan" >
+                      <div class="card-body">
+                          Lets Build
+                          <div id="progress"></div>
+                      </div>
+                  </div>
+        <form>
+            <p class="h4 text-center mb-4">Contact Us</p>
+
+            <!-- Material input text -->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="materialFormContactNameEx" class="form-control">
+                <label for="materialFormContactNameEx">Your name</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormContactEmailEx" class="form-control">
+                <label for="materialFormContactEmailEx">Your email</label>
+            </div>
+            
+            <!-- Material input subject -->
+            <div class="md-form">
+                <i class="fa fa-tag prefix grey-text"></i>
+                <input type="text" id="materialFormContactSubjectEx" class="form-control">
+                <label for="materialFormContactSubjectEx">Subject</label>
+            </div>
+            
+            <!-- Material textarea message -->
+            <div class="md-form">
+                <i class="fa fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
+                <label for="materialFormContactMessageEx">Your message</label>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-secondary" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+            </div>
+        </form>
+    </div>
+<!-- Material form contact -->
+
+
+
+
+
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--  Bootstrap tooltips  -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!--  Bootstrap core JavaScript  -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--  MDB core JavaScript  -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+   
+    <script src="js/subcontractor.js"></script>
+
+    <script src="js/tracker.js"></script>
+
+
+    <script>
+        //Animation init
+        new WOW().init();
+        
+        //Modal
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').focus()
+        })
+        
+        // Material Select Initialization
+        $(document).ready(function() {
+            $('.mdb-select').material_select();
+        });
+        
+        // MDB Lightbox Init
+        $(function () {
+            $("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
+        });
+    </script>
+    
+</body>
+
+</html>
